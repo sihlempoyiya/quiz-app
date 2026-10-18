@@ -5,29 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>quiz Application</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="javascript.js"></script>
   </head>
   <body>
+    <div class="app-container">
+      <!--topic selection screen-->
+      <div id="home-screen" class="screen active">
+        <h2>Select a Topic</h2>
+        <button class="btn topic-btn" onclick="startQuiz('science')">
+          Science
+        </button>
+        <button class="btn topic-btn" onclick="startQuiz('history')">
+          History
+        </button>
+      </div>
 
-   <div class="app-container">
-    <!--topic selection screen-->
-    <div id="home-screen" class="screen active">
-        <h2>Select a Topic </h2>
-        <button class="btn topic-btn" onclick="startQuiz('science')">Science</button>
-        <button class="btn topic-btn" onclick="startQuiz('history')">History</button>
-    </div>
-
-    <!--quiz screen-->
-    <div id="quiz-screen" class="screen">
+      <!--quiz screen-->
+      <div id="quiz-screen" class="screen">
+        <div class="progress-container">
+          <div id="progress-bar"></div>
+        </div>
         <p id="counter">Question 1 of 3</p>
-        <h3 id="question-text">How many planets are in the solar system?</h3>
+        <button id="progress-btn" class="btn">Progress: 0%</button>
+
+        <h3 id="question-text"></h3>
         <div id="options-container"></div>
+      </div>
+      <p id="counter">Question 1 of 3</p>
+      <h3 id="question-text">How many planets are in the solar system?</h3>
+      <div id="options-container"></div>
     </div>
-   <!--results screen-->
+    <!--results screen-->
     <div id="results-screen" class="screen">
-        <h2>Quiz Results</h2>
-        <p id="score-text">You scored 0 out of 3</p>
-        <button class="btn" onclick="restartQuiz()">Restart Quiz</button>
+      <h2>Quiz Results</h2>
+      <p id="score-text">You scored 0 out of 3</p>
+      <button class="btn" onclick="restartQuiz()">Restart Quiz</button>
     </div>
   </body>
 </html>
