@@ -81,11 +81,12 @@ body{
   pointer-events: none; 
 }
 
-.game-title{
-    text-align: center;
-    color:#007bff;
-    margin-bottom: 20px;
-    font-family: Arial, sans-serif;
-    font-size: 50px;
-
+.game-title {
+  text-align: center;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 48px;
+  color: #007bff;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 0px #ffeb3b;
+  transform: rotate(-2deg);
 }
