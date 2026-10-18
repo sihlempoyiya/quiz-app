@@ -74,7 +74,9 @@ function renderQuestion() {
     const q = currentQuiz.getCurrentQuestion();
     document.getElementById('counter').textContent = `Question ${currentQuiz.index + 1} of ${currentQuiz.questions.length}`;
     document.getElementById('question-text').textContent = q.text;
-
+    const progressPercent = ((currentQuiz.index + 1) / currentQuiz.questions.length) * 100;
+    document.getElementById('progress-bar').style.width = progressPercent + '%';
+    
     const optionsContainer = document.getElementById('options-container');
     optionsContainer.innerHTML = '';
 
