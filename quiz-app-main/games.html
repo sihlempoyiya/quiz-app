@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="games.html">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="game" class="justify-center flex-column">
+            <div id="hud">
+                <div class="hud-item">
+                    <p id="progressText" class="hud-prefix">
+                            Question
+
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull">
+
+                        </div>
+                    </div>
+                        <div class="hud-items">
+                            <p class="hud-prefix">
+                                Score
+                            </p>
+                            <h1 class="hud-main-text" id="score">
+                                0
+                            </h1>
+                        </div>
+
+                </div>
+                <div id="question">What is the correct answer to this question?<br> 2 + 2 = ?</div>
+                <div class="choice-container">
+                    <p class="choice-container">A</p>
+                    <P class="choice-text" data-number = "1"> 2</P>
+
+                </div>
+                <br>
+                 <div class="choice-container">
+                    <p class="choice-container">B</p>
+                    <P class="choice-text" data-number = "2"> 0</P>
+
+                </div>
+                <br>
+
+                 <div class="choice-container">
+                    <p class="choice-container">C</p>
+                    <P class="choice-text" data-number = "3"> 6</P>
+
+                </div>
+                <br>
+
+                 <div class="choice-container">
+                    <p class="choice-container">D</p>
+                    <P class="choice-text" data-number = "5"> 4</P>
+
+                </div>
+                <br>
+
+
+                </div>
+                
+            </div>
+        </div>
+
+
+
+    </div>  
+    <script src="game.js"></script>
+    
+    
+</body>
+</html>
